@@ -4,6 +4,10 @@
 Created on Tue Sep 29 17:02:05 2020
 
 @author: nscho
+
+Edited on Wed March 29 11:44:27 2023
+
+@editor: erg
 """
 
 
@@ -97,7 +101,7 @@ if __name__ == "__main__":
                 finite_data.append(np.imag(cfl.readcfl(sysargs[i+1]).squeeze()))
 
         # Define data characteristics! Hard coded!
-        para = ['$\partial M/\partial R_1\cdot R_1$', '$\partial M/\partial R_2\cdot R_2$', '$\partial M/\partial B_1\cdot B_1$']
+        para = ['$\partial M/\partial R_1$', '$\partial M/\partial R_2$', '$\partial M/\partial B_1$']
 
         inset_loc = [(.4, .1), (.4, .5), (.4, .1)]
 
@@ -117,10 +121,10 @@ if __name__ == "__main__":
 
         nom_fac = [1/T1, 1/T2, B1]       # R1, R2, B1
 
-        for i in range(0, len(nom_fac)):
-                sa_data[i]      = sa_data[i]     * nom_fac[i]
-                finite_data[i]  = finite_data[i] * nom_fac[i]
-                deriv[i]        = deriv[i]       * nom_fac[i]
+        #for i in range(0, len(nom_fac)):
+         #       sa_data[i]      = sa_data[i]     * nom_fac[i]
+          #      finite_data[i]  = finite_data[i] * nom_fac[i]
+           #     deriv[i]        = deriv[i]       * nom_fac[i]
 
 
         """
