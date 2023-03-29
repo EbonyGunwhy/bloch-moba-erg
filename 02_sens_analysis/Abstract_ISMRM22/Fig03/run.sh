@@ -42,7 +42,7 @@ bart slice 4 3 tmp/_sens ${RESULTS}/sens_B1
 
 # Difference Quotient
 
-h=1.01
+h=1.005
 
 # R1
 
