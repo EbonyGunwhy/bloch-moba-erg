@@ -1,0 +1,6 @@
+# $ conda create mreplicators
+# $ conda activate mreplicators
+# $ pip installl -r requirements.txt
+numpy
+matplotlib
+scipy
